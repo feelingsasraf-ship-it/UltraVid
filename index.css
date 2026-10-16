@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #080b11;
+    --bg-secondary: #0f1523;
+    --bg-tertiary: #172033;
+    --card-bg: rgba(15, 21, 35, 0.85);
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(59, 130, 246, 0.35);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  }
+
+  .light {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(37, 99, 235, 0.4);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --accent-blue: #2563eb;
+    --accent-purple: #7c3aed;
+    --accent-gradient: linear-gradient(135deg, #2563eb 0%, #6366f1 100%);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.3);
+}
+
+.border-glow:focus-within {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4), 0 0 20px -3px rgba(139, 92, 246, 0.35);
+}

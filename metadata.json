@@ -1,0 +1,6 @@
+{
+  "name": "UltraVid - Video Downloader",
+  "description": "UltraVid is a full-stack, secure, mobile-friendly video downloader web application featuring real-time download queues, provider adapter architecture, multi-resolution selection, and SSRF security.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
